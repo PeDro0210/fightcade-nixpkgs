@@ -33,7 +33,10 @@ let
 in
 pkgs.stdenv.mkDerivation  {
   name = "fightcade";
-  src = ./.;  
+  src = fetchTarball {
+      url = "https://github.com/PeDro0210/fightcade-nixpkgs/releases/download/0.0.1v/fightcade.tar";
+      sha256 = "sha256:136yhhwaw1jic09pz1dy2vnwcqzy1ddp24zsyhyfqvxp6rd8nnzy";
+  };  
   buildInputs = buildInputs;
   dontStrip = true;
 
