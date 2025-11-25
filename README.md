@@ -1,0 +1,3 @@
+# Fightcade nixpkg setup
+
+
